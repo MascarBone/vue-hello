@@ -1,0 +1,7 @@
+element {
+    --colorHex : #000000;
+}
+
+p {
+    color: var(--colorHex);
+}

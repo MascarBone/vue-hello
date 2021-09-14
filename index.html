@@ -31,11 +31,14 @@
                     <div v-bind:class="myClasses" class="col-12 text-center">
                         <img v-bind:src="imgLink" alt="Trailer of D2">
                     </div>
-                    <div class="col-12 text-center">
+                    <div class="col-6 text-center">
                         <button @click="generateColor">Click Here!</button>
                     </div>
+                    <div class="col-6 text-center">
+                        <button @click="outputConsole">Click cssVar!</button>
+                    </div>
                     <div class="col-12 text-center">
-                        <p v-bind:title="message" v-bind:class="myClasses" v>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut sunt amet autem minus ipsam. Esse pariatur maxime blanditiis vitae quam ullam officiis a, {{lookhere}} illo commodi dolorum soluta porro voluptatibus molestiae.</p>
+                        <p v-bind:title="message" v-bind:class="myClasses">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut sunt amet autem minus ipsam. Esse pariatur maxime blanditiis vitae quam ullam officiis a, {{lookhere}} illo commodi dolorum soluta porro voluptatibus molestiae.</p>
                     </div>
                     <div class="col-12 text-center">
                         <h2 v-bind:style="{ color: clickedColor, fontSize: fontSize + 'px' }">I'm here</h2>
