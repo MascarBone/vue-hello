@@ -20,6 +20,23 @@
     <title>Document</title>
 </head>
 <body>
+
+    <div id="data">
+        <header>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h1 v-bind:class="myClasses">{{message}}</h1>
+                    </div>
+                    <div v-bind:class="myClasses" class="col-12 text-center">
+                        <img v-bind:src="imgLink" alt="Trailer of D2">
+                    </div>
+                   
+                </div>
+            </div>
+        </header>
+    </div>
+   
     
 
     <script type="text/javascript" src="js/script.js">
