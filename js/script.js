@@ -8,8 +8,16 @@ let app = new Vue ({
     data : {
         message: 'Welcome to the new interface using VUE\'s Framework',
         myClasses: 'py-3',
-        imgLink: 'https://c.tenor.com/pjLsAVyJPwwAAAAd/diablo-ii-remaster-resurrected.gif'
+        imgLink: 'https://c.tenor.com/pjLsAVyJPwwAAAAd/diablo-ii-remaster-resurrected.gif',
+        lookhere: `THERE'S SOMETHING HERE`,
+        clickedColor: '',
+        fontSize: 40
     },
 
-    
+    methods: {
+        generateColor: function() {
+            this.clickedColor = "#" + Math.floor(Math.random()* 16777215).toString(16);
+        }
+
+    }
 });
